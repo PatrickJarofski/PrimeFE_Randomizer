@@ -1,0 +1,60 @@
+Characters:
+-Fix characters with negative stats
+-Remove all custom animations from characters
+-Remove all assigned WLVL's so nothing gets fucked up like str + magic units.
+-Buff weak characters. Eliwood/Hector come to mind.
+-Since pre-promotes are autoleveled, lower their bases.
+	-Louise, Pent, Hawkeye, Marcus, ???
+-Fix characters with negative stats. Serra and Erk come to mind with DEF stats.
+-Removed Triangle attack from Fiora, Farina, and Florina.
+-Make Nergal drop his tome on defeat. Only Dark Druids can wield it. (They only promote from Male Druid)
+-The dragon will have tougher stats, though not to Chaos Mode levels.
+
+Classes:
+-Add female classes. Druid, Myrm, Cavalier esp.
+-Add promotions and promotion bonuses for female classes. Adjust bases as needed.
+-Add a male priest. (Maybe, might be too much trouble)
+	-Soldiers promote to cavalier now. Think of them as T0's. You get 59 max levels of growths, and they can be your best units!
+	-Renamed Female Mercenary to Sellsword.
+	-Changed assassins to have steal and thief-key abilities. Gave them +1 movement too.
+	-Wyverns and Wyvern Lords have -1 movement now.
+	-Shamans and Druids have -1 movement now. They have good stats though and obvs only class with access to dark magic. (Fixed the animation for Female shaman, btw.)
+	-Corsair now uses the FE10 Fighter animation.
+-Buff weak classes. Soldier, monk, cleric, troubadour come to mind.
+-Nerfed Hector/Eliwood's base class.
+-Make triangle attack just a skill for pegasi. If you have more than three pegasi, you'll be able to use it then.
+-Make T2 lords have S ranks in both weapons on promotion.
+-Dark druids lose Light magic. Archsages lose Dark magic. Ubersages can use all three magics at S rank but can't use Forblaze or Erishkigal.
+
+
+Weapons: (Note that nearly all of these will be undone with Cam's random weapon stats tool)
+-Give prf weapons more uses, max 60? (Cam's randomizer will change this anyway)
+-Make all S rank weapons effective against the Dragon. This includes the Lord weapons and Erishkigal and Forblaze.
+-Changed crit on Luna to 0. Lowered hitrate to 80. Lowered uses to 30 (From 35).
+-Changed Flux to E rank.
+-Changed Nosferatu to D rank.
+-Changed Short Bow to 1 range.
+-Changed hand axe and javelin to D rank. They were E rank before, is that vanilla? Lame.
+-Altered all the Emblem weapons so they aren't just clones of their iron variants. Still E rank though.
+
+Items:
+-Fell contract promotes Sages, Druids, and Bishop to a third tier class. (Aside from the one on Hector Mode, you can buy as many as you like on the Limstella chapter in the secret shop)
+-Earth Seal promotes ALL classes that are T1, except thieves, pirates, corsairs, and brigands. No, seriously, all of them.
+-Ocean Seal promotes thieves, pirates, corsairs, and brigands.
+-Knight Crest promotes soldiers now, in addition to the vanilla classes. (Soldiers promote to CavM, they're essentially T1)
+-Orion's Bolt is unchanged.
+-Hero Crest is unchanged.
+-Heaven Seal is unchanged.
+-Increased Afa's Drops effect to 15% growth boost. Renamed to Stimulant.
+
+Animations:
+-Added Female Shaman (Fixed the animation too! 3/25/14)
+-Added female Druid
+-Added female Cavalier
+-Added female Myrmidon (Since there isn't a female mercenary, I made this anim apply to that class too :B)
+-Added FE10 Fighter animation, assigned it to Corsair only
+
+
+Chapters:
+-Ch. 11H, include two droppable keys and change the thief to drop a chest key if killed.
+-Ch. 11E, changed the inventories of Marcus, Eliwood, Rebecca, and Lowen so they'd get more interesting inventories when randomizing classes.

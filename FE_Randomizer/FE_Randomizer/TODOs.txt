@@ -1,0 +1,63 @@
+﻿TODOs
+
+
+==================== Modes Implemented ====================
+- Character Growths
+	- Shuffle
+	- Random (Reasonable)
+	- Random (Unleashed)
+
+- Character Base stats
+	- Shuffle
+	- Random (Reasonable)
+	- Random (Unleashed)
+
+- Class Stat Caps
+	- Shuffle
+	- Adjust for promotion
+	- Random (Completely)
+
+- Item Randomization
+	- Random Stats
+	- Controlled Might
+	- Controlled Critical
+
+- Random Starting classes
+	- Pro - 5 (Still need ch6+)
+
+==================== Modes to Complete ====================
+- Class Stat Caps
+	- Relative Tier Caps
+		(Promos always 20+)
+		(Unpromos always 15-20)
+
+- Class Base Stats
+	- Shuffle	
+	- Random (Completely) 
+	- There is no adjust for promo option
+		because I don't think it would make
+		a very big difference
+
+- Character Starting Class
+	- Same weapon type
+	- Random same tier
+	- Random (Completely)
+	- Do something about weapon levels
+
+- Enemy Options
+	- Random Class	
+	- Equipment (Always have at least 1 usable weapon)
+		- 1 to 1 (If an enemy originally has 2 items, they will have 2 random)
+		- Random (Completely)
+
+- Items
+	- Similarly tiered weapons have similar stats (i.e. all steels, irons)
+	- Check for Stat Boosters, promo items, and elixirs
+	- weight
+		- random
+		- point algorithm
+
+- GUI
+	- Help buttons explaining each mode
+	
+==================== BUGS ====================
