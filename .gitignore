@@ -6,6 +6,7 @@
 *.user
 *.sln.docstates
 FE7*
+*.sav
 
 # Build results
 [Dd]ebug/
