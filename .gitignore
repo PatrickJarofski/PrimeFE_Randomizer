@@ -5,7 +5,7 @@
 *.suo
 *.user
 *.sln.docstates
-FE7*
+*.gba
 *.sav
 
 # Build results
