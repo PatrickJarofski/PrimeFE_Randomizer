@@ -36,57 +36,58 @@
             this.romNameLabel = new System.Windows.Forms.Label();
             this.randomizeButton = new System.Windows.Forms.Button();
             this.ItemOptionsGB = new System.Windows.Forms.GroupBox();
+            this.controlledCritHelp = new System.Windows.Forms.Button();
+            this.controlledMightHelp = new System.Windows.Forms.Button();
+            this.itemStatsHelp = new System.Windows.Forms.Button();
+            this.controlledCritCB = new System.Windows.Forms.CheckBox();
+            this.controlledMightCB = new System.Windows.Forms.CheckBox();
             this.itemRandom = new System.Windows.Forms.RadioButton();
             this.itemUnmodifiedRB = new System.Windows.Forms.RadioButton();
             this.characterGrowthsGroupBox = new System.Windows.Forms.GroupBox();
+            this.growthRandomHelp = new System.Windows.Forms.Button();
+            this.growthReasonableHelp = new System.Windows.Forms.Button();
+            this.growthShuffleHelp = new System.Windows.Forms.Button();
             this.growthsReasonableRB = new System.Windows.Forms.RadioButton();
             this.growthsUnleashedRB = new System.Windows.Forms.RadioButton();
             this.growthShuffleRB = new System.Windows.Forms.RadioButton();
             this.growthsUnchangedRB = new System.Windows.Forms.RadioButton();
             this.characterStatsGB = new System.Windows.Forms.GroupBox();
+            this.characterBaseRandomHelp = new System.Windows.Forms.Button();
+            this.characterBaseReasonableHelp = new System.Windows.Forms.Button();
+            this.characterBaseShuffleHelp = new System.Windows.Forms.Button();
             this.baseStatsUnleashedRB = new System.Windows.Forms.RadioButton();
             this.baseStatsReasonableRB = new System.Windows.Forms.RadioButton();
             this.baseStatsShuffleRB = new System.Windows.Forms.RadioButton();
             this.baseStatsUnmodifiedRB = new System.Windows.Forms.RadioButton();
-            this.characterClassGB = new System.Windows.Forms.GroupBox();
+            this.unitClassGB = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.charClassRandomRB = new System.Windows.Forms.RadioButton();
-            this.charClassSameWepRB = new System.Windows.Forms.RadioButton();
+            this.unitClassRandomRB = new System.Windows.Forms.RadioButton();
+            this.unitClassSameTierRB = new System.Windows.Forms.RadioButton();
+            this.unitClassSameWepRB = new System.Windows.Forms.RadioButton();
             this.charClassUnmodifiedRB = new System.Windows.Forms.RadioButton();
             this.classStatCapsGB = new System.Windows.Forms.GroupBox();
+            this.classCapsCompleteHelp = new System.Windows.Forms.Button();
+            this.classCapsAdjustHelp = new System.Windows.Forms.Button();
+            this.classCapsShuffleHelp = new System.Windows.Forms.Button();
+            this.classCapsRandomHelp = new System.Windows.Forms.Button();
             this.statCapsOptionsGB = new System.Windows.Forms.GroupBox();
             this.statCapsCompletelyRB = new System.Windows.Forms.RadioButton();
             this.statCapsShuffleRB = new System.Windows.Forms.RadioButton();
             this.statCapsPromoRB = new System.Windows.Forms.RadioButton();
             this.statCapsRandomRB = new System.Windows.Forms.RadioButton();
             this.statCapsUnmodified = new System.Windows.Forms.RadioButton();
-            this.controlledMightCB = new System.Windows.Forms.CheckBox();
-            this.controlledCritCB = new System.Windows.Forms.CheckBox();
-            this.growthShuffleHelp = new System.Windows.Forms.Button();
-            this.growthReasonableHelp = new System.Windows.Forms.Button();
-            this.growthRandomHelp = new System.Windows.Forms.Button();
-            this.characterBaseShuffleHelp = new System.Windows.Forms.Button();
-            this.characterBaseReasonableHelp = new System.Windows.Forms.Button();
-            this.characterBaseRandomHelp = new System.Windows.Forms.Button();
-            this.itemStatsHelp = new System.Windows.Forms.Button();
-            this.classCapsRandomHelp = new System.Windows.Forms.Button();
-            this.classCapsShuffleHelp = new System.Windows.Forms.Button();
-            this.classCapsAdjustHelp = new System.Windows.Forms.Button();
-            this.classCapsCompleteHelp = new System.Windows.Forms.Button();
-            this.controlledMightHelp = new System.Windows.Forms.Button();
-            this.controlledCritHelp = new System.Windows.Forms.Button();
             this.ClassBaseStatsGB = new System.Windows.Forms.GroupBox();
-            this.classBasesUnmodifiedRB = new System.Windows.Forms.RadioButton();
-            this.classBasesRandomRB = new System.Windows.Forms.RadioButton();
-            this.classBaseOptionsGB = new System.Windows.Forms.GroupBox();
-            this.classBasesShuffleRB = new System.Windows.Forms.RadioButton();
-            this.classBasesAdjustRB = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
+            this.classBaseOptionsGB = new System.Windows.Forms.GroupBox();
+            this.classBasesAdjustRB = new System.Windows.Forms.RadioButton();
+            this.classBasesShuffleRB = new System.Windows.Forms.RadioButton();
+            this.classBasesRandomRB = new System.Windows.Forms.RadioButton();
+            this.classBasesUnmodifiedRB = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
             this.ItemOptionsGB.SuspendLayout();
             this.characterGrowthsGroupBox.SuspendLayout();
             this.characterStatsGB.SuspendLayout();
-            this.characterClassGB.SuspendLayout();
+            this.unitClassGB.SuspendLayout();
             this.classStatCapsGB.SuspendLayout();
             this.statCapsOptionsGB.SuspendLayout();
             this.ClassBaseStatsGB.SuspendLayout();
@@ -173,6 +174,56 @@
             this.ItemOptionsGB.TabStop = false;
             this.ItemOptionsGB.Text = "Item Options";
             // 
+            // controlledCritHelp
+            // 
+            this.controlledCritHelp.Location = new System.Drawing.Point(174, 90);
+            this.controlledCritHelp.Name = "controlledCritHelp";
+            this.controlledCritHelp.Size = new System.Drawing.Size(20, 20);
+            this.controlledCritHelp.TabIndex = 9;
+            this.controlledCritHelp.Text = "?";
+            this.controlledCritHelp.UseVisualStyleBackColor = true;
+            this.controlledCritHelp.Click += new System.EventHandler(this.controlledCritHelp_Click);
+            // 
+            // controlledMightHelp
+            // 
+            this.controlledMightHelp.Location = new System.Drawing.Point(174, 67);
+            this.controlledMightHelp.Name = "controlledMightHelp";
+            this.controlledMightHelp.Size = new System.Drawing.Size(20, 20);
+            this.controlledMightHelp.TabIndex = 8;
+            this.controlledMightHelp.Text = "?";
+            this.controlledMightHelp.UseVisualStyleBackColor = true;
+            this.controlledMightHelp.Click += new System.EventHandler(this.controlledMightHelp_Click);
+            // 
+            // itemStatsHelp
+            // 
+            this.itemStatsHelp.Location = new System.Drawing.Point(174, 45);
+            this.itemStatsHelp.Name = "itemStatsHelp";
+            this.itemStatsHelp.Size = new System.Drawing.Size(20, 20);
+            this.itemStatsHelp.TabIndex = 7;
+            this.itemStatsHelp.Text = "?";
+            this.itemStatsHelp.UseVisualStyleBackColor = true;
+            this.itemStatsHelp.Click += new System.EventHandler(this.itemStatsHelp_Click);
+            // 
+            // controlledCritCB
+            // 
+            this.controlledCritCB.AutoSize = true;
+            this.controlledCritCB.Location = new System.Drawing.Point(41, 93);
+            this.controlledCritCB.Name = "controlledCritCB";
+            this.controlledCritCB.Size = new System.Drawing.Size(91, 17);
+            this.controlledCritCB.TabIndex = 3;
+            this.controlledCritCB.Text = "Controlled Crit";
+            this.controlledCritCB.UseVisualStyleBackColor = true;
+            // 
+            // controlledMightCB
+            // 
+            this.controlledMightCB.AutoSize = true;
+            this.controlledMightCB.Location = new System.Drawing.Point(41, 70);
+            this.controlledMightCB.Name = "controlledMightCB";
+            this.controlledMightCB.Size = new System.Drawing.Size(102, 17);
+            this.controlledMightCB.TabIndex = 2;
+            this.controlledMightCB.Text = "Controlled Might";
+            this.controlledMightCB.UseVisualStyleBackColor = true;
+            // 
             // itemRandom
             // 
             this.itemRandom.AutoSize = true;
@@ -209,6 +260,36 @@
             this.characterGrowthsGroupBox.TabIndex = 3;
             this.characterGrowthsGroupBox.TabStop = false;
             this.characterGrowthsGroupBox.Text = "Character Growths";
+            // 
+            // growthRandomHelp
+            // 
+            this.growthRandomHelp.Location = new System.Drawing.Point(174, 90);
+            this.growthRandomHelp.Name = "growthRandomHelp";
+            this.growthRandomHelp.Size = new System.Drawing.Size(20, 20);
+            this.growthRandomHelp.TabIndex = 6;
+            this.growthRandomHelp.Text = "?";
+            this.growthRandomHelp.UseVisualStyleBackColor = true;
+            this.growthRandomHelp.Click += new System.EventHandler(this.growthRandomHelp_Click);
+            // 
+            // growthReasonableHelp
+            // 
+            this.growthReasonableHelp.Location = new System.Drawing.Point(174, 65);
+            this.growthReasonableHelp.Name = "growthReasonableHelp";
+            this.growthReasonableHelp.Size = new System.Drawing.Size(20, 20);
+            this.growthReasonableHelp.TabIndex = 5;
+            this.growthReasonableHelp.Text = "?";
+            this.growthReasonableHelp.UseVisualStyleBackColor = true;
+            this.growthReasonableHelp.Click += new System.EventHandler(this.growthReasonableHelp_Click);
+            // 
+            // growthShuffleHelp
+            // 
+            this.growthShuffleHelp.Location = new System.Drawing.Point(174, 39);
+            this.growthShuffleHelp.Name = "growthShuffleHelp";
+            this.growthShuffleHelp.Size = new System.Drawing.Size(20, 20);
+            this.growthShuffleHelp.TabIndex = 4;
+            this.growthShuffleHelp.Text = "?";
+            this.growthShuffleHelp.UseVisualStyleBackColor = true;
+            this.growthShuffleHelp.Click += new System.EventHandler(this.growthShuffleHelp_Click);
             // 
             // growthsReasonableRB
             // 
@@ -268,6 +349,36 @@
             this.characterStatsGB.TabStop = false;
             this.characterStatsGB.Text = "Character Base Stats";
             // 
+            // characterBaseRandomHelp
+            // 
+            this.characterBaseRandomHelp.Location = new System.Drawing.Point(174, 90);
+            this.characterBaseRandomHelp.Name = "characterBaseRandomHelp";
+            this.characterBaseRandomHelp.Size = new System.Drawing.Size(20, 20);
+            this.characterBaseRandomHelp.TabIndex = 7;
+            this.characterBaseRandomHelp.Text = "?";
+            this.characterBaseRandomHelp.UseVisualStyleBackColor = true;
+            this.characterBaseRandomHelp.Click += new System.EventHandler(this.characterBaseRandomHelp_Click);
+            // 
+            // characterBaseReasonableHelp
+            // 
+            this.characterBaseReasonableHelp.Location = new System.Drawing.Point(174, 65);
+            this.characterBaseReasonableHelp.Name = "characterBaseReasonableHelp";
+            this.characterBaseReasonableHelp.Size = new System.Drawing.Size(20, 20);
+            this.characterBaseReasonableHelp.TabIndex = 6;
+            this.characterBaseReasonableHelp.Text = "?";
+            this.characterBaseReasonableHelp.UseVisualStyleBackColor = true;
+            this.characterBaseReasonableHelp.Click += new System.EventHandler(this.characterBaseReasonableHelp_Click);
+            // 
+            // characterBaseShuffleHelp
+            // 
+            this.characterBaseShuffleHelp.Location = new System.Drawing.Point(174, 42);
+            this.characterBaseShuffleHelp.Name = "characterBaseShuffleHelp";
+            this.characterBaseShuffleHelp.Size = new System.Drawing.Size(20, 20);
+            this.characterBaseShuffleHelp.TabIndex = 5;
+            this.characterBaseShuffleHelp.Text = "?";
+            this.characterBaseShuffleHelp.UseVisualStyleBackColor = true;
+            this.characterBaseShuffleHelp.Click += new System.EventHandler(this.characterBaseShuffleHelp_Click);
+            // 
             // baseStatsUnleashedRB
             // 
             this.baseStatsUnleashedRB.AutoSize = true;
@@ -310,60 +421,60 @@
             this.baseStatsUnmodifiedRB.Text = "Unmodified";
             this.baseStatsUnmodifiedRB.UseVisualStyleBackColor = true;
             // 
-            // characterClassGB
+            // unitClassGB
             // 
-            this.characterClassGB.Controls.Add(this.label3);
-            this.characterClassGB.Controls.Add(this.radioButton1);
-            this.characterClassGB.Controls.Add(this.charClassRandomRB);
-            this.characterClassGB.Controls.Add(this.charClassSameWepRB);
-            this.characterClassGB.Controls.Add(this.charClassUnmodifiedRB);
-            this.characterClassGB.Enabled = false;
-            this.characterClassGB.Location = new System.Drawing.Point(480, 60);
-            this.characterClassGB.Name = "characterClassGB";
-            this.characterClassGB.Size = new System.Drawing.Size(220, 117);
-            this.characterClassGB.TabIndex = 11;
-            this.characterClassGB.TabStop = false;
-            this.characterClassGB.Text = "Character Starting Class";
+            this.unitClassGB.Controls.Add(this.label5);
+            this.unitClassGB.Controls.Add(this.label3);
+            this.unitClassGB.Controls.Add(this.unitClassRandomRB);
+            this.unitClassGB.Controls.Add(this.unitClassSameTierRB);
+            this.unitClassGB.Controls.Add(this.unitClassSameWepRB);
+            this.unitClassGB.Controls.Add(this.charClassUnmodifiedRB);
+            this.unitClassGB.Location = new System.Drawing.Point(480, 60);
+            this.unitClassGB.Name = "unitClassGB";
+            this.unitClassGB.Size = new System.Drawing.Size(220, 117);
+            this.unitClassGB.TabIndex = 11;
+            this.unitClassGB.TabStop = false;
+            this.unitClassGB.Text = "Character Starting Class";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(135, 25);
+            this.label3.Location = new System.Drawing.Point(135, 46);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Not Ready";
             // 
-            // radioButton1
+            // unitClassRandomRB
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 90);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(125, 17);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Random (Completely)";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.unitClassRandomRB.AutoSize = true;
+            this.unitClassRandomRB.Location = new System.Drawing.Point(6, 90);
+            this.unitClassRandomRB.Name = "unitClassRandomRB";
+            this.unitClassRandomRB.Size = new System.Drawing.Size(125, 17);
+            this.unitClassRandomRB.TabIndex = 4;
+            this.unitClassRandomRB.TabStop = true;
+            this.unitClassRandomRB.Text = "Random (Completely)";
+            this.unitClassRandomRB.UseVisualStyleBackColor = true;
             // 
-            // charClassRandomRB
+            // unitClassSameTierRB
             // 
-            this.charClassRandomRB.AutoSize = true;
-            this.charClassRandomRB.Location = new System.Drawing.Point(6, 67);
-            this.charClassRandomRB.Name = "charClassRandomRB";
-            this.charClassRandomRB.Size = new System.Drawing.Size(122, 17);
-            this.charClassRandomRB.TabIndex = 3;
-            this.charClassRandomRB.Text = "Random (Same Tier)";
-            this.charClassRandomRB.UseVisualStyleBackColor = true;
+            this.unitClassSameTierRB.AutoSize = true;
+            this.unitClassSameTierRB.Location = new System.Drawing.Point(6, 67);
+            this.unitClassSameTierRB.Name = "unitClassSameTierRB";
+            this.unitClassSameTierRB.Size = new System.Drawing.Size(122, 17);
+            this.unitClassSameTierRB.TabIndex = 3;
+            this.unitClassSameTierRB.Text = "Random (Same Tier)";
+            this.unitClassSameTierRB.UseVisualStyleBackColor = true;
             // 
-            // charClassSameWepRB
+            // unitClassSameWepRB
             // 
-            this.charClassSameWepRB.AutoSize = true;
-            this.charClassSameWepRB.Location = new System.Drawing.Point(6, 44);
-            this.charClassSameWepRB.Name = "charClassSameWepRB";
-            this.charClassSameWepRB.Size = new System.Drawing.Size(123, 17);
-            this.charClassSameWepRB.TabIndex = 1;
-            this.charClassSameWepRB.Text = "Same Weapon Type";
-            this.charClassSameWepRB.UseVisualStyleBackColor = true;
+            this.unitClassSameWepRB.AutoSize = true;
+            this.unitClassSameWepRB.Location = new System.Drawing.Point(6, 44);
+            this.unitClassSameWepRB.Name = "unitClassSameWepRB";
+            this.unitClassSameWepRB.Size = new System.Drawing.Size(123, 17);
+            this.unitClassSameWepRB.TabIndex = 1;
+            this.unitClassSameWepRB.Text = "Same Weapon Type";
+            this.unitClassSameWepRB.UseVisualStyleBackColor = true;
             // 
             // charClassUnmodifiedRB
             // 
@@ -392,6 +503,46 @@
             this.classStatCapsGB.TabIndex = 12;
             this.classStatCapsGB.TabStop = false;
             this.classStatCapsGB.Text = "Class Stat Caps";
+            // 
+            // classCapsCompleteHelp
+            // 
+            this.classCapsCompleteHelp.Location = new System.Drawing.Point(174, 127);
+            this.classCapsCompleteHelp.Name = "classCapsCompleteHelp";
+            this.classCapsCompleteHelp.Size = new System.Drawing.Size(20, 20);
+            this.classCapsCompleteHelp.TabIndex = 17;
+            this.classCapsCompleteHelp.Text = "?";
+            this.classCapsCompleteHelp.UseVisualStyleBackColor = true;
+            this.classCapsCompleteHelp.Click += new System.EventHandler(this.classCapsCompleteHelp_Click);
+            // 
+            // classCapsAdjustHelp
+            // 
+            this.classCapsAdjustHelp.Location = new System.Drawing.Point(174, 104);
+            this.classCapsAdjustHelp.Name = "classCapsAdjustHelp";
+            this.classCapsAdjustHelp.Size = new System.Drawing.Size(20, 20);
+            this.classCapsAdjustHelp.TabIndex = 16;
+            this.classCapsAdjustHelp.Text = "?";
+            this.classCapsAdjustHelp.UseVisualStyleBackColor = true;
+            this.classCapsAdjustHelp.Click += new System.EventHandler(this.classCapsAdjustHelp_Click);
+            // 
+            // classCapsShuffleHelp
+            // 
+            this.classCapsShuffleHelp.Location = new System.Drawing.Point(174, 82);
+            this.classCapsShuffleHelp.Name = "classCapsShuffleHelp";
+            this.classCapsShuffleHelp.Size = new System.Drawing.Size(20, 20);
+            this.classCapsShuffleHelp.TabIndex = 15;
+            this.classCapsShuffleHelp.Text = "?";
+            this.classCapsShuffleHelp.UseVisualStyleBackColor = true;
+            this.classCapsShuffleHelp.Click += new System.EventHandler(this.classCapsShuffleHelp_Click);
+            // 
+            // classCapsRandomHelp
+            // 
+            this.classCapsRandomHelp.Location = new System.Drawing.Point(174, 45);
+            this.classCapsRandomHelp.Name = "classCapsRandomHelp";
+            this.classCapsRandomHelp.Size = new System.Drawing.Size(20, 20);
+            this.classCapsRandomHelp.TabIndex = 14;
+            this.classCapsRandomHelp.Text = "?";
+            this.classCapsRandomHelp.UseVisualStyleBackColor = true;
+            this.classCapsRandomHelp.Click += new System.EventHandler(this.classCapsRandomHelp_Click);
             // 
             // statCapsOptionsGB
             // 
@@ -458,156 +609,6 @@
             this.statCapsUnmodified.UseVisualStyleBackColor = true;
             this.statCapsUnmodified.CheckedChanged += new System.EventHandler(this.statCapsUnmodified_CheckedChanged);
             // 
-            // controlledMightCB
-            // 
-            this.controlledMightCB.AutoSize = true;
-            this.controlledMightCB.Location = new System.Drawing.Point(41, 70);
-            this.controlledMightCB.Name = "controlledMightCB";
-            this.controlledMightCB.Size = new System.Drawing.Size(102, 17);
-            this.controlledMightCB.TabIndex = 2;
-            this.controlledMightCB.Text = "Controlled Might";
-            this.controlledMightCB.UseVisualStyleBackColor = true;
-            // 
-            // controlledCritCB
-            // 
-            this.controlledCritCB.AutoSize = true;
-            this.controlledCritCB.Location = new System.Drawing.Point(41, 93);
-            this.controlledCritCB.Name = "controlledCritCB";
-            this.controlledCritCB.Size = new System.Drawing.Size(91, 17);
-            this.controlledCritCB.TabIndex = 3;
-            this.controlledCritCB.Text = "Controlled Crit";
-            this.controlledCritCB.UseVisualStyleBackColor = true;
-            // 
-            // growthShuffleHelp
-            // 
-            this.growthShuffleHelp.Location = new System.Drawing.Point(174, 39);
-            this.growthShuffleHelp.Name = "growthShuffleHelp";
-            this.growthShuffleHelp.Size = new System.Drawing.Size(20, 20);
-            this.growthShuffleHelp.TabIndex = 4;
-            this.growthShuffleHelp.Text = "?";
-            this.growthShuffleHelp.UseVisualStyleBackColor = true;
-            this.growthShuffleHelp.Click += new System.EventHandler(this.growthShuffleHelp_Click);
-            // 
-            // growthReasonableHelp
-            // 
-            this.growthReasonableHelp.Location = new System.Drawing.Point(174, 65);
-            this.growthReasonableHelp.Name = "growthReasonableHelp";
-            this.growthReasonableHelp.Size = new System.Drawing.Size(20, 20);
-            this.growthReasonableHelp.TabIndex = 5;
-            this.growthReasonableHelp.Text = "?";
-            this.growthReasonableHelp.UseVisualStyleBackColor = true;
-            this.growthReasonableHelp.Click += new System.EventHandler(this.growthReasonableHelp_Click);
-            // 
-            // growthRandomHelp
-            // 
-            this.growthRandomHelp.Location = new System.Drawing.Point(174, 90);
-            this.growthRandomHelp.Name = "growthRandomHelp";
-            this.growthRandomHelp.Size = new System.Drawing.Size(20, 20);
-            this.growthRandomHelp.TabIndex = 6;
-            this.growthRandomHelp.Text = "?";
-            this.growthRandomHelp.UseVisualStyleBackColor = true;
-            this.growthRandomHelp.Click += new System.EventHandler(this.growthRandomHelp_Click);
-            // 
-            // characterBaseShuffleHelp
-            // 
-            this.characterBaseShuffleHelp.Location = new System.Drawing.Point(174, 42);
-            this.characterBaseShuffleHelp.Name = "characterBaseShuffleHelp";
-            this.characterBaseShuffleHelp.Size = new System.Drawing.Size(20, 20);
-            this.characterBaseShuffleHelp.TabIndex = 5;
-            this.characterBaseShuffleHelp.Text = "?";
-            this.characterBaseShuffleHelp.UseVisualStyleBackColor = true;
-            this.characterBaseShuffleHelp.Click += new System.EventHandler(this.characterBaseShuffleHelp_Click);
-            // 
-            // characterBaseReasonableHelp
-            // 
-            this.characterBaseReasonableHelp.Location = new System.Drawing.Point(174, 65);
-            this.characterBaseReasonableHelp.Name = "characterBaseReasonableHelp";
-            this.characterBaseReasonableHelp.Size = new System.Drawing.Size(20, 20);
-            this.characterBaseReasonableHelp.TabIndex = 6;
-            this.characterBaseReasonableHelp.Text = "?";
-            this.characterBaseReasonableHelp.UseVisualStyleBackColor = true;
-            this.characterBaseReasonableHelp.Click += new System.EventHandler(this.characterBaseReasonableHelp_Click);
-            // 
-            // characterBaseRandomHelp
-            // 
-            this.characterBaseRandomHelp.Location = new System.Drawing.Point(174, 90);
-            this.characterBaseRandomHelp.Name = "characterBaseRandomHelp";
-            this.characterBaseRandomHelp.Size = new System.Drawing.Size(20, 20);
-            this.characterBaseRandomHelp.TabIndex = 7;
-            this.characterBaseRandomHelp.Text = "?";
-            this.characterBaseRandomHelp.UseVisualStyleBackColor = true;
-            this.characterBaseRandomHelp.Click += new System.EventHandler(this.characterBaseRandomHelp_Click);
-            // 
-            // itemStatsHelp
-            // 
-            this.itemStatsHelp.Location = new System.Drawing.Point(174, 45);
-            this.itemStatsHelp.Name = "itemStatsHelp";
-            this.itemStatsHelp.Size = new System.Drawing.Size(20, 20);
-            this.itemStatsHelp.TabIndex = 7;
-            this.itemStatsHelp.Text = "?";
-            this.itemStatsHelp.UseVisualStyleBackColor = true;
-            this.itemStatsHelp.Click += new System.EventHandler(this.itemStatsHelp_Click);
-            // 
-            // classCapsRandomHelp
-            // 
-            this.classCapsRandomHelp.Location = new System.Drawing.Point(174, 45);
-            this.classCapsRandomHelp.Name = "classCapsRandomHelp";
-            this.classCapsRandomHelp.Size = new System.Drawing.Size(20, 20);
-            this.classCapsRandomHelp.TabIndex = 14;
-            this.classCapsRandomHelp.Text = "?";
-            this.classCapsRandomHelp.UseVisualStyleBackColor = true;
-            this.classCapsRandomHelp.Click += new System.EventHandler(this.classCapsRandomHelp_Click);
-            // 
-            // classCapsShuffleHelp
-            // 
-            this.classCapsShuffleHelp.Location = new System.Drawing.Point(174, 82);
-            this.classCapsShuffleHelp.Name = "classCapsShuffleHelp";
-            this.classCapsShuffleHelp.Size = new System.Drawing.Size(20, 20);
-            this.classCapsShuffleHelp.TabIndex = 15;
-            this.classCapsShuffleHelp.Text = "?";
-            this.classCapsShuffleHelp.UseVisualStyleBackColor = true;
-            this.classCapsShuffleHelp.Click += new System.EventHandler(this.classCapsShuffleHelp_Click);
-            // 
-            // classCapsAdjustHelp
-            // 
-            this.classCapsAdjustHelp.Location = new System.Drawing.Point(174, 104);
-            this.classCapsAdjustHelp.Name = "classCapsAdjustHelp";
-            this.classCapsAdjustHelp.Size = new System.Drawing.Size(20, 20);
-            this.classCapsAdjustHelp.TabIndex = 16;
-            this.classCapsAdjustHelp.Text = "?";
-            this.classCapsAdjustHelp.UseVisualStyleBackColor = true;
-            this.classCapsAdjustHelp.Click += new System.EventHandler(this.classCapsAdjustHelp_Click);
-            // 
-            // classCapsCompleteHelp
-            // 
-            this.classCapsCompleteHelp.Location = new System.Drawing.Point(174, 127);
-            this.classCapsCompleteHelp.Name = "classCapsCompleteHelp";
-            this.classCapsCompleteHelp.Size = new System.Drawing.Size(20, 20);
-            this.classCapsCompleteHelp.TabIndex = 17;
-            this.classCapsCompleteHelp.Text = "?";
-            this.classCapsCompleteHelp.UseVisualStyleBackColor = true;
-            this.classCapsCompleteHelp.Click += new System.EventHandler(this.classCapsCompleteHelp_Click);
-            // 
-            // controlledMightHelp
-            // 
-            this.controlledMightHelp.Location = new System.Drawing.Point(174, 67);
-            this.controlledMightHelp.Name = "controlledMightHelp";
-            this.controlledMightHelp.Size = new System.Drawing.Size(20, 20);
-            this.controlledMightHelp.TabIndex = 8;
-            this.controlledMightHelp.Text = "?";
-            this.controlledMightHelp.UseVisualStyleBackColor = true;
-            this.controlledMightHelp.Click += new System.EventHandler(this.controlledMightHelp_Click);
-            // 
-            // controlledCritHelp
-            // 
-            this.controlledCritHelp.Location = new System.Drawing.Point(174, 90);
-            this.controlledCritHelp.Name = "controlledCritHelp";
-            this.controlledCritHelp.Size = new System.Drawing.Size(20, 20);
-            this.controlledCritHelp.TabIndex = 9;
-            this.controlledCritHelp.Text = "?";
-            this.controlledCritHelp.UseVisualStyleBackColor = true;
-            this.controlledCritHelp.Click += new System.EventHandler(this.controlledCritHelp_Click);
-            // 
             // ClassBaseStatsGB
             // 
             this.ClassBaseStatsGB.Controls.Add(this.label4);
@@ -622,27 +623,14 @@
             this.ClassBaseStatsGB.TabStop = false;
             this.ClassBaseStatsGB.Text = "Class Base Stats";
             // 
-            // classBasesUnmodifiedRB
+            // label4
             // 
-            this.classBasesUnmodifiedRB.AutoSize = true;
-            this.classBasesUnmodifiedRB.Location = new System.Drawing.Point(6, 19);
-            this.classBasesUnmodifiedRB.Name = "classBasesUnmodifiedRB";
-            this.classBasesUnmodifiedRB.Size = new System.Drawing.Size(78, 17);
-            this.classBasesUnmodifiedRB.TabIndex = 0;
-            this.classBasesUnmodifiedRB.TabStop = true;
-            this.classBasesUnmodifiedRB.Text = "Unmodified";
-            this.classBasesUnmodifiedRB.UseVisualStyleBackColor = true;
-            // 
-            // classBasesRandomRB
-            // 
-            this.classBasesRandomRB.AutoSize = true;
-            this.classBasesRandomRB.Location = new System.Drawing.Point(6, 42);
-            this.classBasesRandomRB.Name = "classBasesRandomRB";
-            this.classBasesRandomRB.Size = new System.Drawing.Size(65, 17);
-            this.classBasesRandomRB.TabIndex = 1;
-            this.classBasesRandomRB.TabStop = true;
-            this.classBasesRandomRB.Text = "Random";
-            this.classBasesRandomRB.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(135, 21);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Not Ready";
             // 
             // classBaseOptionsGB
             // 
@@ -655,17 +643,6 @@
             this.classBaseOptionsGB.TabStop = false;
             this.classBaseOptionsGB.Text = "(Choose Options)";
             // 
-            // classBasesShuffleRB
-            // 
-            this.classBasesShuffleRB.AutoSize = true;
-            this.classBasesShuffleRB.Location = new System.Drawing.Point(6, 19);
-            this.classBasesShuffleRB.Name = "classBasesShuffleRB";
-            this.classBasesShuffleRB.Size = new System.Drawing.Size(58, 17);
-            this.classBasesShuffleRB.TabIndex = 0;
-            this.classBasesShuffleRB.TabStop = true;
-            this.classBasesShuffleRB.Text = "Shuffle";
-            this.classBasesShuffleRB.UseVisualStyleBackColor = true;
-            // 
             // classBasesAdjustRB
             // 
             this.classBasesAdjustRB.AutoSize = true;
@@ -677,14 +654,47 @@
             this.classBasesAdjustRB.Text = "Random";
             this.classBasesAdjustRB.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // classBasesShuffleRB
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(135, 21);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Not Ready";
+            this.classBasesShuffleRB.AutoSize = true;
+            this.classBasesShuffleRB.Location = new System.Drawing.Point(6, 19);
+            this.classBasesShuffleRB.Name = "classBasesShuffleRB";
+            this.classBasesShuffleRB.Size = new System.Drawing.Size(58, 17);
+            this.classBasesShuffleRB.TabIndex = 0;
+            this.classBasesShuffleRB.TabStop = true;
+            this.classBasesShuffleRB.Text = "Shuffle";
+            this.classBasesShuffleRB.UseVisualStyleBackColor = true;
+            // 
+            // classBasesRandomRB
+            // 
+            this.classBasesRandomRB.AutoSize = true;
+            this.classBasesRandomRB.Location = new System.Drawing.Point(6, 42);
+            this.classBasesRandomRB.Name = "classBasesRandomRB";
+            this.classBasesRandomRB.Size = new System.Drawing.Size(65, 17);
+            this.classBasesRandomRB.TabIndex = 1;
+            this.classBasesRandomRB.TabStop = true;
+            this.classBasesRandomRB.Text = "Random";
+            this.classBasesRandomRB.UseVisualStyleBackColor = true;
+            // 
+            // classBasesUnmodifiedRB
+            // 
+            this.classBasesUnmodifiedRB.AutoSize = true;
+            this.classBasesUnmodifiedRB.Location = new System.Drawing.Point(6, 19);
+            this.classBasesUnmodifiedRB.Name = "classBasesUnmodifiedRB";
+            this.classBasesUnmodifiedRB.Size = new System.Drawing.Size(78, 17);
+            this.classBasesUnmodifiedRB.TabIndex = 0;
+            this.classBasesUnmodifiedRB.TabStop = true;
+            this.classBasesUnmodifiedRB.Text = "Unmodified";
+            this.classBasesUnmodifiedRB.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(135, 69);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Not Ready";
             // 
             // MainForm
             // 
@@ -693,7 +703,7 @@
             this.ClientSize = new System.Drawing.Size(712, 371);
             this.Controls.Add(this.ClassBaseStatsGB);
             this.Controls.Add(this.classStatCapsGB);
-            this.Controls.Add(this.characterClassGB);
+            this.Controls.Add(this.unitClassGB);
             this.Controls.Add(this.characterStatsGB);
             this.Controls.Add(this.characterGrowthsGroupBox);
             this.Controls.Add(this.ItemOptionsGB);
@@ -712,8 +722,8 @@
             this.characterGrowthsGroupBox.PerformLayout();
             this.characterStatsGB.ResumeLayout(false);
             this.characterStatsGB.PerformLayout();
-            this.characterClassGB.ResumeLayout(false);
-            this.characterClassGB.PerformLayout();
+            this.unitClassGB.ResumeLayout(false);
+            this.unitClassGB.PerformLayout();
             this.classStatCapsGB.ResumeLayout(false);
             this.classStatCapsGB.PerformLayout();
             this.statCapsOptionsGB.ResumeLayout(false);
@@ -749,9 +759,9 @@
         private System.Windows.Forms.RadioButton baseStatsReasonableRB;
         private System.Windows.Forms.RadioButton baseStatsShuffleRB;
         private System.Windows.Forms.RadioButton baseStatsUnmodifiedRB;
-        private System.Windows.Forms.GroupBox characterClassGB;
-        private System.Windows.Forms.RadioButton charClassRandomRB;
-        private System.Windows.Forms.RadioButton charClassSameWepRB;
+        private System.Windows.Forms.GroupBox unitClassGB;
+        private System.Windows.Forms.RadioButton unitClassSameTierRB;
+        private System.Windows.Forms.RadioButton unitClassSameWepRB;
         private System.Windows.Forms.RadioButton charClassUnmodifiedRB;
         private System.Windows.Forms.GroupBox classStatCapsGB;
         private System.Windows.Forms.GroupBox statCapsOptionsGB;
@@ -760,7 +770,7 @@
         private System.Windows.Forms.RadioButton statCapsPromoRB;
         private System.Windows.Forms.RadioButton statCapsRandomRB;
         private System.Windows.Forms.RadioButton statCapsUnmodified;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton unitClassRandomRB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox controlledCritCB;
         private System.Windows.Forms.CheckBox controlledMightCB;
@@ -784,6 +794,7 @@
         private System.Windows.Forms.RadioButton classBasesRandomRB;
         private System.Windows.Forms.RadioButton classBasesUnmodifiedRB;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 

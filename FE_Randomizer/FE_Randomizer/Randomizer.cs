@@ -27,10 +27,7 @@ namespace FE_Randomizer
             romType = "FE7";
 
             if(characterList != null)            
-                characterList.Clear();
-
-
-            UnitData.RandomUnits(_romPath);
+                characterList.Clear();            
             
             characterList = new List<FE_Character>();
             classList = new List<FE_Class>();
@@ -90,6 +87,12 @@ namespace FE_Randomizer
         public void RandomItemStats(bool might, bool crit)
         {
             ItemStats.RandomItemStats(ref itemList, might, crit);
+        }
+
+
+       public void RandomizeUnitData(string UnitOffsetsFilePath)
+        {
+            UnitData.RandomUnits(_romPath, UnitOffsetsFilePath);
         }
 
 
@@ -200,7 +203,7 @@ namespace FE_Randomizer
 
             return ROMData.FE7_NumClasses;
         }
-
+        
 
         private int getItemArrayStart()
         {
@@ -208,6 +211,7 @@ namespace FE_Randomizer
 
             return ROMData.FE7_ItemData;
         }
+
 
         private int getItemArraySize()
         {

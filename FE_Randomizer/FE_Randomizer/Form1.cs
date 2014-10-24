@@ -45,6 +45,7 @@ namespace FE_Randomizer
             runCharacterStats();
             runClassCaps();
             runItemStats();
+            runUnitData();
 
             randomizer.saveChanges();
             MessageBox.Show("Randomization Complete!");
@@ -119,11 +120,17 @@ namespace FE_Randomizer
             
         }
 
-
+        private void runUnitData()
+        {
+            if(unitClassRandomRB.Checked)
+                randomizer.RandomizeUnitData(Properties.Resources.allFE7Units);
+        }
 
         // ====================================================
         // ------------- Radio Button Event Stuff -------------
         // ====================================================
+
+        #region Radio button Enablers
 
         private void statCapsUnmodified_CheckedChanged(object sender, EventArgs e)
         {
@@ -156,10 +163,13 @@ namespace FE_Randomizer
             }
         }
 
+        #endregion
 
         // ====================================================
         // ---------------- Help Button Stuff ----------------
         // ====================================================
+
+        #region Help Button Methods
 
         private void growthShuffleHelp_Click(object sender, EventArgs e)
         {
@@ -293,6 +303,6 @@ namespace FE_Randomizer
                         + "\nlower than their unpromoted counterparts.";
             MessageBox.Show(msg);
         }
-  
+        #endregion
     }
 }

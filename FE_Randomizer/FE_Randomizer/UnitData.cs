@@ -13,10 +13,10 @@ namespace FE_Randomizer
         private static List<byte[]> units = new List<byte[]>();
         private static string[] offsets;
 
-        public static void RandomUnits(string filePath)
+        public static void RandomUnits(string filePath, string unitOffsetsPath)
         {
             char[] delimiters = { ' ', '\r', '\n' };
-            string path = FE_Randomizer.Properties.Resources.allFE7Units;
+            string path = unitOffsetsPath;
             offsets = path.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
 
             ReadUnits(filePath);
