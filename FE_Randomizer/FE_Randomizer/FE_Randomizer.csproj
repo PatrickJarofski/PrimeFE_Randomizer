@@ -94,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="allFE7Units.txt" />
+    <None Include="allFE7PlayableUnits.txt" />
     <Content Include="TODOs.txt" />
   </ItemGroup>
   <ItemGroup>

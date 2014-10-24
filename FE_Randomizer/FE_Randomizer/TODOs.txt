@@ -23,7 +23,7 @@
 	- Controlled Critical
 
 - Random Starting classes
-	- Pro - 5 (Still need ch6+)
+	- Pro - 12 (Still need ch13+)
 
 ==================== Modes to Complete ====================
 - Class Stat Caps

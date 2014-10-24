@@ -61,13 +61,38 @@ namespace FE_Randomizer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 0xCC5B50 0xCC5B60
-        ///0xCC5BD0 0xCC5BF0 0xCC5C00 0xCC5C10 0xCC5C20
-        ///0xCC5D28 0xCC5D38 0xCC5D48 0xCC5D58 0xCC5D68 0xCC5D88
-        ///0xCC5EC8 0xCC5ED8 0xCC5EE8 0xCC5F08 0xCC5F18 0xCC5F28 0xCC5F38 0xCC5F48 0xCC5F58
-        ///0xCC6098 0xCC60A8 0xCC60C8 0xCC60D8 0xCC60E8 0xCC60F8 0xCC6108 0xCC6118 0xCC6128 0xCC6138 0xCC6148 0xCC6158 0xCC6168 0xCC61A8 0xCC61B8 0xCC61D8 0xCC61F8
-        ///0xCC6320 0xCC6330 0xCC6340 0xCC6360 0xCC6370 0xCC6390 0xCC63A0
-        ///0xCC6620 0xCC6630 0xCC6640 0xCC6650 0xCC6660 0xCC6670 0xCC6680 0xCC6690 0xCC66A0 0xCC66B0 0x [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to CC5B50 CC5B60
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///CC7BDC CC7C9C.
+        /// </summary>
+        internal static string allFE7PlayableUnits {
+            get {
+                return ResourceManager.GetString("allFE7PlayableUnits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  CC5B50 CC5B90
+        /// CC5BD0 CC5C80
+        /// CC5CE8 CC5DF8
+        /// CC5E88 CC5FC8
+        /// CC6058 CC6248
+        /// CC6300 CC6450
+        /// CC64E0 CC6860
+        /// CC6940 CC6C20
+        /// CC6CD8 CC7028
+        /// CC70F4 CC73F4
+        /// CC7484 CC7774
+        /// CC7840 CC7B60.
         /// </summary>
         internal static string allFE7Units {
             get {
