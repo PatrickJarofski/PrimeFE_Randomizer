@@ -23,7 +23,7 @@
 	- Controlled Critical
 
 - Random Starting classes
-	- Pro - 12 (Still need ch13+)
+	- Pro - 20 (Still need ch21+, Also need Lyn mode PC offsets)
 
 ==================== Modes to Complete ====================
 - Class Stat Caps
