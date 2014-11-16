@@ -54,7 +54,7 @@ namespace FE_Randomizer
             writer.Close();
         }
 
-        public static void ShuffleByteArray(ref byte[] array, int arrLength)
+        public static void ShuffleByteArray(byte[] array, int arrLength)
         {
             int n = arrLength;
             int k;
@@ -70,7 +70,7 @@ namespace FE_Randomizer
             }
         }
 
-        public static bool IsPromotedClass(ref FE_Class obj) 
+        public static bool IsPromotedClass(FE_Class obj) 
         {
             switch(obj.ability2)
             {   // If ground promo, horse promo, wyvern promo, or pegasus promo

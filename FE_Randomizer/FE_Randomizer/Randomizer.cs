@@ -33,60 +33,60 @@ namespace FE_Randomizer
             classList = new List<FE_Class>();
             itemList = new List<FE_Item>();
             
-            fillListOfType<FE_Character>(ref characterList, getCharacterArrayStart(), CHARACTER_SIZE, getCharacterArraySize());
-            fillListOfType<FE_Class>(ref classList, getClassArrayStart(), CLASS_SIZE, getClassArraySize());
-            fillListOfType<FE_Item>(ref itemList, getItemArrayStart(), ITEM_SIZE, getItemArraySize());
+            fillListOfType<FE_Character>( characterList, getCharacterArrayStart(), CHARACTER_SIZE, getCharacterArraySize());
+            fillListOfType<FE_Class>( classList, getClassArrayStart(), CLASS_SIZE, getClassArraySize());
+            fillListOfType<FE_Item>( itemList, getItemArrayStart(), ITEM_SIZE, getItemArraySize());
         }
         
         public void saveChanges()
         {
             Utility.DisableTutorials(_romPath);
-            writeListOfType<FE_Character>(ref characterList, getCharacterArrayStart(), CHARACTER_SIZE, getCharacterArraySize());
-            writeListOfType<FE_Class>(ref classList, getClassArrayStart(), CLASS_SIZE, getClassArraySize());
-            writeListOfType<FE_Item>(ref itemList, getItemArrayStart(), ITEM_SIZE, getItemArraySize());
+            writeListOfType<FE_Character>( characterList, getCharacterArrayStart(), CHARACTER_SIZE, getCharacterArraySize());
+            writeListOfType<FE_Class>( classList, getClassArrayStart(), CLASS_SIZE, getClassArraySize());
+            writeListOfType<FE_Item>( itemList, getItemArrayStart(), ITEM_SIZE, getItemArraySize());
         }
 
 
 
         public void RandomizeCharacterGrowths(int min, int max)
         {
-            CharacterGrowths.randomizeGrowths(ref characterList, min, max);
+            CharacterGrowths.randomizeGrowths( characterList, min, max);
         }
 
 
         public void ShuffleCharacterGrowths()
         {
-            CharacterGrowths.shuffleGrowths(ref characterList);
+            CharacterGrowths.shuffleGrowths( characterList);
         }
 
 
         public void RandomizeCharacterStats(int min, int max)
         {
-            CharacterBaseStats.RandomizeStats(ref characterList, min, max);
+            CharacterBaseStats.RandomizeStats( characterList, min, max);
         }
 
 
         public void ShuffleCharacterBaseStats()
         {
-            CharacterBaseStats.ShuffleBaseStats(ref characterList);
+            CharacterBaseStats.ShuffleBaseStats( characterList);
         }
 
 
         public void ShuffleStatCaps()
         {
-            ClassStatCaps.ShuffleClassCaps(ref classList);
+            ClassStatCaps.ShuffleClassCaps( classList);
         }
         
 
         public void RandomizeClassStatCaps(int min, int max, bool promoFlag)
         {
-            ClassStatCaps.RandomizeClassStatCaps(ref classList, min, max, promoFlag);
+            ClassStatCaps.RandomizeClassStatCaps( classList, min, max, promoFlag);
         }
 
 
         public void RandomItemStats(bool might, bool crit)
         {
-            ItemStats.RandomItemStats(ref itemList, might, crit);
+            ItemStats.RandomItemStats( itemList, might, crit);
         }
 
 
@@ -119,7 +119,7 @@ namespace FE_Randomizer
         /// <param name="numOfIndices">How many entries are in the 
         /// array being worked with</param>
         #endregion
-        private void fillListOfType<T>(ref List<T> list, int ROMstartPosition, int objectSize, int numOfIndices)
+        private void fillListOfType<T>( List<T> list, int ROMstartPosition, int objectSize, int numOfIndices)
         {
             /// TODO - Strictly PC randomization
             ///      - Strictly Enemy/NPC randomization
@@ -146,7 +146,7 @@ namespace FE_Randomizer
 
         // Description for this similar to fillListOfType<T>
         // except now we're writing to the ROM
-        private void writeListOfType<T>(ref List<T>list, int ROMStartPosition, int objectSize, int numIndices)
+        private void writeListOfType<T>( List<T>list, int ROMStartPosition, int objectSize, int numIndices)
         {
             if (_romPath == string.Empty || _romPath == null)
             {

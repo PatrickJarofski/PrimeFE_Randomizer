@@ -43,7 +43,7 @@ namespace FE_Randomizer
 		
 		            if(currentUnit[0] != 0x00) // Don't edit separators
                     {                      
-			            randomizeUnit(ref currentUnit);
+			            randomizeUnit(currentUnit);
                         UnitAndLocation temp = new UnitAndLocation(currentUnit, Convert.ToInt32(reader.BaseStream.Position - 16));
 			            unitGroups.Add(temp);
 		            }
@@ -64,7 +64,7 @@ namespace FE_Randomizer
         }
         
 
-        private static void randomizeUnit(ref byte[] unit)
+        private static void randomizeUnit( byte[] unit)
         {
             byte newClass = 0x01;
 

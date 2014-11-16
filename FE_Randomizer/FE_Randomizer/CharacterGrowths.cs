@@ -9,7 +9,7 @@ namespace FE_Randomizer
 {
     public static class CharacterGrowths
     {
-        public static void randomizeGrowths(ref List<FE_Character> list, int min, int max)
+        public static void randomizeGrowths(List<FE_Character> list, int min, int max)
         {
             FE_Character temp;
 
@@ -41,7 +41,7 @@ namespace FE_Randomizer
             }
         }
 
-        public static void shuffleGrowths(ref List<FE_Character> list)
+        public static void shuffleGrowths(List<FE_Character> list)
         {
             FE_Character temp;
             byte[] growths = new byte[7];
@@ -58,7 +58,7 @@ namespace FE_Randomizer
                 growths[5] = temp.growthRes;
                 growths[6] = temp.growthLuck;
 
-                Utility.ShuffleByteArray(ref growths, growths.Length);
+                Utility.ShuffleByteArray(growths, growths.Length);
 
                 temp.growthHP   = growths[0];
                 temp.growthStr  = growths[1];

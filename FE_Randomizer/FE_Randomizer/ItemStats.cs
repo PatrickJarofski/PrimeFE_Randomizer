@@ -11,7 +11,7 @@ namespace FE_Randomizer
         private static byte[] mightValues = new byte[50];
         private static byte[] critValues = new byte[12];
 
-        public static void RandomItemStats(ref List<FE_Item> list, bool mightFlag, bool critFlag)
+        public static void RandomItemStats(List<FE_Item> list, bool mightFlag, bool critFlag)
         {
             FE_Item temp;
 
@@ -29,7 +29,7 @@ namespace FE_Randomizer
                     continue;
 
                 if (mightFlag)
-                    controlledMight(ref temp);
+                    controlledMight(temp);
                 else
                     temp.might = (byte)Utility.RNG.Next(1, 26);
 
@@ -37,7 +37,7 @@ namespace FE_Randomizer
                 temp.durability = (byte)Utility.RNG.Next(10, 51);            
 
                 if (critFlag)
-                    controlledCrit(ref temp);
+                    controlledCrit(temp);
 
                 else
                     temp.crit = (byte)Utility.RNG.Next(0, 31);
@@ -71,12 +71,12 @@ namespace FE_Randomizer
         }
 
 
-        private static void controlledMight(ref FE_Item item)
+        private static void controlledMight(FE_Item item)
         {
             item.might = mightValues[Utility.RNG.Next(0, mightValues.Length)];
         }
 
-        private static void controlledCrit(ref FE_Item item)
+        private static void controlledCrit(FE_Item item)
         {
             item.crit = critValues[Utility.RNG.Next(0, critValues.Length)];
         }

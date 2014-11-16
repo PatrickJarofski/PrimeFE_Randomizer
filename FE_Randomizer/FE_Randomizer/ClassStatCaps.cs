@@ -8,7 +8,7 @@ namespace FE_Randomizer
 {
     public static class ClassStatCaps
     {
-        public static void ShuffleClassCaps(ref List<FE_Class> list)
+        public static void ShuffleClassCaps(List<FE_Class> list)
         {
             FE_Class temp;
             byte[] caps = new byte[5];
@@ -22,7 +22,7 @@ namespace FE_Randomizer
                 caps[3] = temp.maxDef;
                 caps[4] = temp.maxRes;
 
-                Utility.ShuffleByteArray(ref caps, caps.Length);
+                Utility.ShuffleByteArray(caps, caps.Length);
 
                 temp.maxStr = caps[0];
                 temp.maxSkl = caps[1];
@@ -35,7 +35,7 @@ namespace FE_Randomizer
         }
 
 
-        public static void RandomizeClassStatCaps(ref List<FE_Class> list, int min, int max, bool isPromoBetter)
+        public static void RandomizeClassStatCaps(List<FE_Class> list, int min, int max, bool isPromoBetter)
         {
             FE_Class temp;
             FE_Class unpromo;
@@ -46,7 +46,7 @@ namespace FE_Randomizer
 
                 if (isPromoBetter)
                 {
-                    if (Utility.IsPromotedClass(ref temp))
+                    if (Utility.IsPromotedClass(temp))
                     {
                         unpromo = list[temp.promotion];
 
@@ -59,11 +59,11 @@ namespace FE_Randomizer
                     }
 
                     else // Unpromoted class
-                        RandomCaps(ref temp, min, max);
+                        RandomCaps(temp, min, max);
                 }
 
                 else 
-                    RandomCaps(ref temp, min, max);
+                    RandomCaps(temp, min, max);
     
 
                 list[i] = temp;
@@ -71,7 +71,7 @@ namespace FE_Randomizer
             }
         }
 
-        private static void RandomCaps(ref FE_Class obj, int min, int max)
+        private static void RandomCaps(FE_Class obj, int min, int max)
         {
             obj.maxHP  = (byte)Utility.RNG.Next(min + 20, max + 30);
             obj.maxStr = (byte)Utility.RNG.Next(min, max);

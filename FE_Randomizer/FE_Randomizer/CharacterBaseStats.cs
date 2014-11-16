@@ -8,7 +8,7 @@ namespace FE_Randomizer
 {
     public static class CharacterBaseStats
     {
-        public static void RandomizeStats(ref List<FE_Character> list, int min, int max)
+        public static void RandomizeStats(List<FE_Character> list, int min, int max)
         {
             FE_Character temp;
 
@@ -29,7 +29,7 @@ namespace FE_Randomizer
         }
 
 
-        public static void ShuffleBaseStats(ref List<FE_Character> list)
+        public static void ShuffleBaseStats(List<FE_Character> list)
         {
             FE_Character temp;
             byte[] baseStats = new byte[7];
@@ -45,7 +45,7 @@ namespace FE_Randomizer
                 baseStats[5] = temp.baseRes;
                 baseStats[6] = temp.baseLuck;
 
-                Utility.ShuffleByteArray(ref baseStats, baseStats.Length);
+                Utility.ShuffleByteArray(baseStats, baseStats.Length);
 
                 temp.baseHP = baseStats[0];
                 temp.baseStr = baseStats[1];
